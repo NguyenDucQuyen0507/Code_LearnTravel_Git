@@ -1,0 +1,26 @@
+@keyframes language{
+    /* scale là nó tăng kích thước như cái khối đó có điểm tựa cố đinh */
+    0% {
+        transform: scaleY(0%);
+    }
+    80% {
+        transform: scaleY(120%);
+    }
+    100% {
+        transform: scaleY(100%);
+    }
+}
+
+@keyframes navbar_language{
+    from{
+        transform: scaleX(0);
+    }
+    to{
+        transform: scaleX(1);
+    }
+}
+@keyframes tam {
+    from{
+        transform: scale();
+    }
+}

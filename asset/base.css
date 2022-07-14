@@ -1,0 +1,207 @@
+*{
+    box-sizing: inherit;
+}
+:root{
+    --liner-gradient: linear-gradient(180deg, #aa3788, rgb(253, 129, 243));
+    --black-color: black;
+    --text-color: rgb(189, 219, 80);
+    --while-color: #fff;
+    --address-color:rgb(65, 243, 198);
+    --height-navigation:80px;
+    --gray-color: rgb(80,80,80);
+    --box-shadow: 2px 2px 3px rgb(204, 201, 193);
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5rem;
+}
+.Navigation__nav--click,
+.Navigation__nav--click--link,
+.Navigation__link--list,
+.Navigation__nav--click--link1,
+.Navigation__nav--icon--title,
+.Navigation__link--item,
+.container__find{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container__all--choose,
+.travel__plan h1,
+.container__img1 p,
+.container__price p,
+.travel__background--heading,
+.container__part-1,
+.travel__people--head,
+.travel__form--rail-sale,
+.travel__your--tittle-head,
+.travel__your--link-character,
+.travel__pack--tittle-head,
+.travel__people--convert-img-register,
+.travel__video--go{
+    font-family: Satisfy, cursive;
+}
+
+.header__nav--languages--choses:hover .header__nav--languages--choses-item::before,
+.Navigation__nav--link:hover .Navigation__nav--click::before,
+.Navigation__nav--click--options:hover .Navigation__nav--click--link::before,
+.Navigation__link--list--item:hover .Navigation__link--list--href::before{
+    width: 100%;
+    /* animation: navbar_language 0.3s ease;
+    transform-origin: left; */
+    /* Nếu dùng như này thì nó cũng chạy ra như bình thường nhưng nó lại không chạy về lại */
+    
+}
+.Navigation__nav--link:hover .Navigation__nav--click,
+.Navigation__link--item:hover .Navigation__link--choose,
+.Navigation__nav--link1:hover .Navigation__nav--click,
+.Navigation__link--list--item:hover .Navigation__link--list--href,
+.Navigation__nav--click--options:hover .Navigation__nav--click--link{
+    color: var(--text-color);
+}
+
+.header__nav--language:hover .header__nav--languages,
+.Navigation__nav--link:hover .Navigation__nav--click--option,
+.Navigation__nav--link1:hover .Navigation__link
+/* .Navigation__nav--icon:hover .Navigation__nav--icon--product */
+{
+    display: block;
+    animation: language 0.4s linear ;
+    transform-origin: top;
+}
+
+/* Navigation bar */
+.Navigation__menu{
+    position:fixed;
+    top: 0;
+    width: 45rem;
+    height: 100vh;  
+    right: -50%;
+    padding: 0 3rem;
+    /* visibility: hidden; */
+    transition: all linear 0.5s;
+    z-index: 10;
+    background-color: var(--while-color);
+    overflow-y: scroll; 
+    
+}
+.Navigation__menu::-webkit-scrollbar{
+    display: none;
+}
+.Navigation__close{
+    text-align: right;
+    font-size: 3rem;
+}
+
+#Navigation__close--menu:checked ~.Navigation__menu{
+    right: -50%;
+    
+}
+
+.Navigation__close--icon:hover{
+    color: red;
+    cursor: pointer;
+}
+#Navigation__bar:checked ~ .Navigation__menu{
+    /* visibility: visible; */
+    right: 0;
+}
+.Navigation__menu--general{
+    text-align: center;
+}
+
+.Navigation__menu--images{
+    width: 180px;
+}
+
+.Navigation__menu--text{
+    
+}
+
+.Navigation__menu--map{
+
+}
+
+.Navigation__menu--map-images{
+
+}
+
+.Navigation__menu--tittle{
+    margin: 0;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    color: var(--gray-color);
+}
+
+.Navigation__menu--search{
+    margin: 40px 0;
+}
+
+.Navigation__menu--search--tittle{
+    margin: 0;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.Navigation__menu--input{
+    display: flex;
+    justify-content: center;
+}
+
+.Navigation__menu--input-input{
+    width: 150px;
+    font-size: 1.5rem;
+    height: 40px;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    background: rgb(248,248,248);
+}
+
+.Navigation__menu--submit{
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    background-color: var(--address-color);
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+
+.Navigation__menu--social{
+    padding-bottom: 80px;
+}
+
+.Navigation__menu--social--tittle{
+    margin: 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.Navigation__menu--icon{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+.Navigation__menu--icon--item{
+    margin: 0 10px;
+}
+.Navigation__menu--icon--link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background-color: var(--address-color);
+    font-size: 2rem;
+    color: var(--while-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    justify-content: center;  
+}
+
+
+
